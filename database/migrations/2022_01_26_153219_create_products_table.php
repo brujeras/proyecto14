@@ -28,6 +28,7 @@ class CreateProductsTable extends Migration
             $table->integer('quantity')->nullable();
             $table->integer('quantity_sold')->nullable();
             $table->integer('quantity_pending')->nullable();
+            $table->date('disabled')->nullable();
 
             $table->timestamps();
         });

@@ -12,7 +12,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug', 'description', 'price', 'subcategory_id', 'brand_id', 'quantity'];
+    protected $fillable = ['name', 'slug', 'description', 'price', 'subcategory_id', 'brand_id', 'quantity', 'disabled', 'quantity_sold', 'quantity_pending'];
 //protected $guarded = ['id', 'created_at', 'updated_at'];
 
     const BORRADOR = 1;
