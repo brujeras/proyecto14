@@ -26,6 +26,8 @@ class CreateProductsTable extends Migration
             $table->foreignId('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
             $table->foreignId('brand_id')->references('id')->on('brands')->onDelete('cascade');
             $table->integer('quantity')->nullable();
+            $table->integer('quantity_sold')->nullable();
+            $table->integer('quantity_pending')->nullable();
 
             $table->timestamps();
         });
